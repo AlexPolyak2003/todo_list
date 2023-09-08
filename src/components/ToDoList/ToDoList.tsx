@@ -1,6 +1,6 @@
 import React from "react";
 import { ToDoItem } from "./ToDoItem/ToDoItem";
-import { Todo } from "../../../src/index";
+import { Todo } from "../../../src/types";
 import ToDoPanel from "../ToDoPanel/Panel";
 import { useTodo } from "../../utils";
 

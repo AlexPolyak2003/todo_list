@@ -1,6 +1,6 @@
 import React from "react";
 import { TodoContext } from "./TodoContext";
-import { Todo } from "../../../src/index";
+import { Todo } from "../../../src/types";
 
 interface TodoProviderProps {
   children: React.ReactNode;

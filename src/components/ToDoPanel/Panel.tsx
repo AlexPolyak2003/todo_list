@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Panel.module.scss";
 import Button from "../Button/Btn";
-import { Todo } from "../../../src/index";
+import { Todo } from "../../../src/types";
 import { useTodo } from "../../utils";
 
 const DEFAULT_TODO = {

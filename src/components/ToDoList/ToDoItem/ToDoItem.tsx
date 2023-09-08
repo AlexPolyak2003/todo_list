@@ -1,5 +1,5 @@
 import React from "react";
-import { Todo } from "../../../../src/index";
+import { Todo } from "../../../../src/types";
 import styles from "./ToDoItem.module.scss";
 import Button from "../../Button/Btn";
 
