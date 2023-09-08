@@ -83,3 +83,5 @@ export const TodoProvider: React.FC<TodoProviderProps> = ({ children }) => {
 
   return <TodoContext.Provider value={value}>{children}</TodoContext.Provider>;
 };
+
+export default TodoProvider;
