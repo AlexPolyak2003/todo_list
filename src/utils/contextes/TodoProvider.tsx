@@ -26,11 +26,18 @@ export const TodoProvider: React.FC<TodoProviderProps> = ({ children }) => {
     setTodoIdForEdit(id);
   };
 
+  // const addTodo = ({ name, description }: Omit<Todo, "id" | "checked">) => {
+
+  //   setTodos([
+  //     ...todos,
+  //     { id: todos[todos.length - 1].id + 1, description, name, checked: false },
+  //   ]);
+  // };
+
   const addTodo = ({ name, description }: Omit<Todo, "id" | "checked">) => {
-    setTodos([
-      ...todos,
-      { id: todos[todos.length - 1].id + 1, description, name, checked: false },
-    ]);
+    const id = todos.length > 0 ? todos[todos.length - 1].id + 1 : 1;
+
+    setTodos([...todos, { id, description, name, checked: false }]);
   };
 
   const checkTodo = (id: Todo["id"]) => {
